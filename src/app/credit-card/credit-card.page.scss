@@ -1,0 +1,51 @@
+.content{
+    padding: 16px;
+    .btn-cont{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        ion-button{
+          --background: #F57734;
+          --border-radius: 30px;
+          width: 90%;
+          margin-top: 20px;
+        }
+    }
+    ion-input{
+        --background: #f2f2f2;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+    ion-row{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .title-row{
+        font-size: 18px;
+        margin-top: 5px;
+        ion-icon{
+            margin-bottom: 20px;
+        }
+    }
+    .date-row{
+        ion-input{
+            --background: #f2f2f2;
+            border-radius: 5px;     
+        }   
+    }
+    .txt-col{
+        max-width: 80%;
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .icon-col{
+        max-width: 20%;
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

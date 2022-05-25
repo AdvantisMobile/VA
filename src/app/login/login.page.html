@@ -1,0 +1,31 @@
+ 
+<ion-content class="ion-padding"> 
+  <div class="header-cont">
+    <div>
+      <div style="font-size: 30px;">Iniciar Sesión</div>
+      <div style="font-size: 14px;font-weight: 100;margin-top: 15px;">Accede a tu cuenta de VA!</div>
+    </div>
+  </div>
+  <div class="input-cont">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+      <ion-input type="email" formControlName="email" placeholder="Correo Electrónico"(ionChange)="changeEmail()" ></ion-input>
+      <ion-input type="text" formControlName="password" placeholder="Contraseña"  (ionChange)="changePassword()"></ion-input>
+        <p style="margin-top: 25px; text-align: center; color:red;font-size: 18px;" [hidden]="erroAuth">Error de autentificación.</p>
+      <button  class="login-btn" type="submit">Iniciar Sesión</button>
+      <p (click)="forgotPwd()">Olvidaste tu contraseña?</p>
+    </form>     
+  </div>
+  <div class="social-cont">
+    <p>o inicia sesión con:</p>
+    <div class="fb-btn" (click)="onFb()">
+      <img src="assets/imgs/facebook_login.png" />
+    </div>
+
+    <div class="google-btn" (click)="onGoogle()" style="margin-top: 25px;">
+      <img src="assets/imgs/google_login.png" />
+    </div>
+  </div>
+  <div class="reg-cont">
+    <p>Todavía no tienes cuenta? <span style="color:#F57734;" (click)="signUp()">Registrate Aquí</span></p>
+  </div>
+</ion-content>

@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-row>
+    <ion-col class="icon-col"><ion-icon name="arrow-back" (click)="onBack()" ></ion-icon><ion-label >CheckOut</ion-label></ion-col>
+    <!-- <ion-col style="max-width: 20%;width: 20%; text-align: center;"><ion-icon name="cart"></ion-icon></ion-col> -->
+  </ion-row>
+</ion-header>
+<ion-content class="ion-padding">
+  <p>Delivery Address</p>
+  <ion-row class="address-row">
+    <ion-col class="t-col"><ion-label style="font-size: 15px;">653 Nostrand Ave, Brooklyn, NY 11216</ion-label></ion-col>
+    <ion-col class="d-col"><ion-label (click)="changeAddress()" style="color:#F57734;font-size: 13px;">Change</ion-label></ion-col>
+  </ion-row>
+
+  <ion-row class="method-row">
+    <ion-col class="t-col"><ion-label>Payment method</ion-label></ion-col>
+    <ion-col class="d-col" style="color:#F57734;"><ion-icon name="add"></ion-icon><ion-label (click)="addCard()" style="color:#F57734;">Add Card</ion-label></ion-col>
+  </ion-row>
+  
+  <ion-row class="pay-row">
+    <ion-col class="t-col">Cash on Delivery</ion-col>
+    <ion-col class="d-col"><ion-checkbox [(ngModel)]="cashDelivery"></ion-checkbox></ion-col>
+  </ion-row>
+  <ion-row class="pay-row">
+    <ion-col class="t-col"><img src="assets/imgs/visa.png" /> **** **** **** 2178</ion-col>
+    <ion-col class="d-col"><ion-checkbox [(ngModel)]="visa"></ion-checkbox></ion-col>
+  </ion-row>
+  <ion-row class="pay-row">
+    <ion-col class="t-col"><img src="assets/imgs/paypal.png" /> johndoe@gmail.com</ion-col>
+    <ion-col class="d-col"><ion-checkbox [(ngModel)]="paypal"></ion-checkbox></ion-col>
+  </ion-row>
+
+  <ion-row class="calc-row" style="margin-top: 20px;">
+    <ion-col class="t-col">Sub Total</ion-col>
+    <ion-col class="d-col">$68</ion-col>
+  </ion-row> 
+  <ion-row class="calc-row">
+    <ion-col class="t-col">Delivery Cost</ion-col>
+    <ion-col class="d-col">$2</ion-col>
+  </ion-row>
+  <ion-row class="calc-row">
+    <ion-col class="t-col">Discount</ion-col>
+    <ion-col class="d-col">-$4</ion-col>
+  </ion-row>
+  <ion-row class="total-row">
+    <ion-col class="t-col">Total</ion-col>
+    <ion-col class="d-col">-$66</ion-col>
+  </ion-row>
+  <div class="btn-cont">
+    <ion-button (click)="sendOrder()">Send Order</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,24 @@
+<div class="content">
+  <ion-row class="title-row">
+    <ion-col class="txt-col"><ion-label>Add Credit/Debit Card</ion-label></ion-col>
+    <ion-col class="icon-col"><ion-icon name="close" (click)="onClose()"></ion-icon></ion-col>
+  </ion-row>
+  <ion-input type="number" placeholder="Card Number" [(ngModel)]="cardNumber"></ion-input>
+
+  <ion-row class="date-row">
+    <ion-col><ion-label>Expiry</ion-label></ion-col>
+    <ion-col><ion-input type="number" placeholder="MM" style="margin-top: 0px;"></ion-input></ion-col>
+    <ion-col><ion-input type="number" placeholder="YY" style="margin-top: 0px;"></ion-input></ion-col>
+  </ion-row>
+  <ion-input type="number" placeholder="Security Code" [(ngModel)]="code"></ion-input>
+  <ion-input type="text" placeholder="First Name" [(ngModel)]="firstName"></ion-input>
+  <ion-input type="text" placeholder="Last Name" [(ngModel)]="lastName"></ion-input>
+
+  <ion-row>
+    <ion-col class="txt-col">You can remove this card</ion-col>
+    <ion-col class="icon-col"><ion-toggle (ionChange)="changeToggle()" [(ngModel)]="removeCard"></ion-toggle></ion-col>
+  </ion-row>
+  <div class="btn-cont">
+    <ion-button (click)="addCard()"><ion-icon name="add"></ion-icon>Add Card</ion-button>
+  </div>
+</div>

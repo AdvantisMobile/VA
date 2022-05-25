@@ -1,0 +1,21 @@
+ <ion-content>
+    <div class="header-cont">
+      <div>
+        <div style="font-size: 30px;margin-top: 50px; ">Enviamos un Código a tu Celular</div>
+        <div style="font-size: 14px;font-weight: 100;margin-top: 15px;">
+          Revisa tus SMS de este numero: 071*****12 
+          para continuar con el cambio de contraseña
+        </div>
+      </div>
+    </div>
+    <div class="input-cont">
+      <ion-row>
+        <ion-col><ion-input type="password" placeholder="*" [(ngModel)]="fir"></ion-input></ion-col>
+        <ion-col><ion-input type="password" placeholder="*" [(ngModel)]="sec"></ion-input></ion-col>
+        <ion-col><ion-input type="password" placeholder="*" [(ngModel)]="thr"></ion-input></ion-col>
+        <ion-col><ion-input type="password" placeholder="*" [(ngModel)]="four"></ion-input></ion-col>
+      </ion-row>
+      <button  class="login-btn" (click)="continue()">Continuar</button>
+        <p style="color:#F57734;font-size: 14px;">No recibí ningún código</p>
+    </div>
+</ion-content>

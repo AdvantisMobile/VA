@@ -1,0 +1,22 @@
+<div class="content">
+  <ion-row class="title-row">
+    <ion-col class="txt-col"><ion-label> </ion-label></ion-col>
+    <ion-col class="icon-col"><ion-icon name="close" (click)="onClose()"></ion-icon></ion-col>
+  </ion-row>
+  <div class="img-cont">
+    <div style="text-align: center;">
+      <img src="assets/imgs/thanks.png" />
+      <div style="font-size: 25px; margin-top: 10px;">Thank You!</div>
+      <div style="font-size: 18px; margin-top: 5px;">for your order</div>
+      <div style="margin-top: 10px; font-size: 13px; font-weight: 100;">Your Order is now being processed. We will let you know once the order is picked from the outlet. Check</div>
+    </div>
+  </div>
+  <div class="btn-cont">
+    <ion-button (click)="trackOrder()">Track My Order</ion-button>
+  </div>
+  <div style="margin-top: 25px;">
+    <ion-label (click)="back()">Back To Home</ion-label>
+  </div>
+  
+
+</div>

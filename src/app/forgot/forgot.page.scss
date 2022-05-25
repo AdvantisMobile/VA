@@ -1,0 +1,26 @@
+.header-cont{
+    text-align: center;
+    padding: 25px;
+}
+.input-cont{
+    padding: 15px;
+    text-align: center;
+    .login-btn{
+        margin-top: 25px;
+        width: 100%;
+        height: 56px;
+        border-radius: 28px;
+        background-color: #F57734;
+        color: white;
+        font-size: 16px;
+    }
+    ion-input{
+        margin-top: 25px;
+        border-radius: 23px;
+        --background: #F2F2F2;
+        height: 46px;
+        --padding-start: 25px;
+        font-weight: 100;
+        font-size: 14px;
+    }
+}

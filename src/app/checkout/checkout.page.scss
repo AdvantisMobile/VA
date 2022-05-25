@@ -1,0 +1,87 @@
+ion-header{
+    ion-row{
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      .icon-col{
+        display: flex;
+        align-items: center;
+        max-width: 80%;
+        width: 80%;
+        ion-label{
+            margin-left: 20px;
+        }
+      }
+    }
+    
+}
+p{
+  margin: 0px;
+  font-size: 12px;
+  font-weight: 100;
+}
+ion-row{
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+
+  .t-col{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 70%;
+    width: 70%;
+  }
+  .d-col{
+    display: flex;
+    justify-content: end;
+    max-width: 30%;
+    width: 30%;
+    align-items: center;
+    ion-icon{
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+  }
+}
+.method-row{
+  font-size: 13px;
+  margin-top: 25px;
+}
+.pay-row{
+  background-color: #F6F6F6;
+  margin-top: 10px;
+  font-size: 12px;
+  border-radius: 2px;
+  .t-col{
+    padding-left: 15px;
+  }
+}
+.calc-row{
+  height: 30px;
+  font-size: 13px;
+}
+.total-row{
+  margin-top: 25px;
+  font-size: 15px;
+}
+ion-checkbox{
+  --border-radius:50%;
+  --border-color:#F57734; 
+  --background-checked: none;
+  --border-color-checked:#F57734;
+  --checkmark-color:#F57734;
+}
+.btn-cont{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ion-button{
+    --background: #F57734;
+    --border-radius: 30px;
+    width: 90%;
+    margin-top: 20px;
+  }
+}

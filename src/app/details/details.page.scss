@@ -1,0 +1,30 @@
+ion-header{
+    padding: 10px;
+    margin-top: 10px;
+    height: 20%;
+    ion-row{
+      height: 50px;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      .icon-col{
+        display: flex;
+        align-items: center;
+        max-width: 80%;
+        width: 80%;
+        ion-label{
+            margin-left: 20px;
+        }
+      }
+    }
+    .search-cont{
+        text-align:left;
+        ion-searchbar{
+          --background: #F2F2F2;
+          background-color: #F2F2F2;
+          border-radius: 30px;
+          font-size: 14px ;
+          height: 45px;
+        }
+    }
+}

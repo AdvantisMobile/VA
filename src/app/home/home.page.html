@@ -1,0 +1,153 @@
+ 
+<ion-header  >
+  <ion-row>
+    <ion-col style="max-width: 80%;width: 80%;"><ion-label >Hola de Nuevo Miguel!</ion-label></ion-col>
+    <ion-col style="max-width: 20%;width: 20%; text-align: center;"><ion-icon name="cart"></ion-icon></ion-col>
+  </ion-row>
+</ion-header>
+<ion-content [fullscreen]="false">
+  
+  <div id="container">
+      <div class='h-cont'>
+          <div style="font-size: 11px; color:lightgray">Entrega en</div>
+          <div class="pos" >Ubicación actual <ion-icon style="margin-left: 10px;" name="arrow-down"></ion-icon></div>
+      </div>
+      <div class="search-cont">
+          <ion-searchbar placeholder="Buscar comida"></ion-searchbar>
+      </div>
+      <div class="food_category">
+        <div class="food_type" (click)="goTorestaurants()">
+          <img src="assets/imgs/ic_promos.png">
+          <p>Promos</p>
+        </div>
+        <div class="food_type" (click)="goTorestaurants()">
+          <img src="assets/imgs/ic_thai.png">
+          <p>Thai</p>
+        </div>
+        <div class="food_type" (click)="goTorestaurants()">
+          <img src="assets/imgs/ic_pasta.png">
+          <p>Pasta</p>
+        </div>
+        <div class="food_type" (click)="goTorestaurants()">
+          <img src="assets/imgs/ic_indian.png">
+          <p>Indian</p>
+        </div>
+      </div>
+      <div class="content">
+        <ion-list lines="none">
+          <h2 class="d-flex">Popular<span class="end" (click)="map()">Ver mas</span></h2>
+          <ion-card>
+            <ion-card-content>
+              <img src="assets/imgs/pizza.png" />
+              <div class="name-cont"><ion-label>Pizza Giorgio</ion-label></div>
+              <div class="detail-cont">
+                <ion-icon name="star"></ion-icon>
+                <p style="margin: 5px;">4.9 <span>(124 ratings) Café     Western Food</span></p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+            <ion-card-content>
+              <img src="assets/imgs/cafe.png" />
+              <div class="name-cont"><ion-label>Café de Noir</ion-label></div>
+              <div class="detail-cont">
+                <ion-icon name="star"></ion-icon>
+                <p style="margin: 5px;">4.9 <span>(124 ratings) Café     Western Food</span></p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+          <ion-card>
+            <ion-card-content>
+              <img src="assets/imgs/bakes.png" />
+              <div class="name-cont"><ion-label>Bakes by Tella</ion-label></div>
+              <div class="detail-cont">
+                <ion-icon name="star"></ion-icon>
+                <p style="margin: 5px;">4.9 <span>(124 ratings) Café     Western Food</span></p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+          <!-- Most Popular -->
+          <h2 class="d-flex">Most Popular<span class="end" (click)="map()">Ver mas</span></h2>
+          <div class="food_category">
+            <div class="food-pop">
+              <div>
+                <img src="assets/imgs/pizza.png" />
+                <div class="name-cont"><ion-label>Cafe De Bambaa</ion-label></div>
+                <div class="detail-cont">
+                  <span>(124 ratings) Café     Western Food</span>
+                  <ion-icon style="margin-left: 5px; color: #F57734;" name="star"></ion-icon> 
+                  <p style="margin: 5px; color: #F57734;">4.9 </p>
+                </div>
+              </div>
+            </div>
+            <div class="food-pop">
+              <div>
+                <img src="assets/imgs/burger.png" />
+                <div class="name-cont"><ion-label>Burger by Bella</ion-label></div>
+                <div class="detail-cont">
+                  <span>(124 ratings) Café     Western Food</span>
+                  <ion-icon style="margin-left: 5px; color: #F57734;" name="star"></ion-icon> 
+                  <p style="margin: 5px; color: #F57734;">4.9 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+         <!-- Recent -->
+          <h2 class="d-flex">Recent Items<span class="end" (click)="map()">Ver mas</span></h2>
+          <ion-item (click)="restroDetails()">
+            <div class="containet">
+              <div class="restro_detail d-flex">
+                <div class="img_box center_img">
+                  <img src="assets/imgs/mu_pizza.png" class="crop_img">
+                </div>
+                <div class="text_box">
+                  <h3>Marine Rise Restaurant</h3>
+                  <ion-label>Café Western Food</ion-label>
+                  <div class="detail-box">
+                    <ion-icon style="color: #F57734;" name="star"></ion-icon> 
+                    <p style="margin: 5px; color: #F57734;">4.9 <span style="color: lightgray;">(124 Ratings)</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item (click)="restroDetails()">
+            <div class="containet">
+              <div class="restro_detail d-flex">
+                <div class="img_box center_img">
+                  <img src="assets/imgs/barita.png" class="crop_img">
+                </div>
+                <div class="text_box">
+                  <h3>Barita</h3>
+                  <ion-label>Café Coffee</ion-label>
+                  <div class="detail-box">
+                    <ion-icon style="color: #F57734;" name="star"></ion-icon> 
+                    <p style="margin: 5px; color: #F57734;">4.9 <span style="color: lightgray;">(124 Ratings)</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-item>
+          <ion-item (click)="restroDetails()">
+            <div class="containet">
+              <div class="restro_detail d-flex">
+                <div class="img_box center_img">
+                  <img src="assets/imgs/pizza_rush.png" class="crop_img">
+                </div>
+                <div class="text_box">
+                  <h3>Pizza Rush Hour</h3>
+                  <ion-label>Café Italian Food</ion-label>
+                  <div class="detail-box">
+                    <ion-icon style="color: #F57734;" name="star"></ion-icon> 
+                    <p style="margin: 5px; color: #F57734;">4.9 <span style="color: lightgray;">(124 Ratings)</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ion-item>
+        </ion-list>
+        
+      </div>
+      
+  </div>
+</ion-content>

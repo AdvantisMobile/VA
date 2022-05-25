@@ -1,0 +1,53 @@
+ 
+<ion-content [fullscreen]="true">
+    <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="true" [options]="slideOpts">
+        <ion-slide>
+          <img src="assets/imgs/find_food.png" class="slide-image" />
+            <div class="slide-title" h="20%">
+                <ion-text> 
+                  <span class="hypertext">
+                    Encuentra Tu Comida
+                    Favorita
+                  </span> <br>
+                  Descubre y apoya a mas de 1,000 restaurantes 
+                </ion-text>
+            </div>
+          <ion-row class="btn-row">
+            <ion-col><ion-button class="next-btn" expand="block" fill="solid" (click)="nextPage()">Continuar</ion-button></ion-col>
+          </ion-row>
+        </ion-slide>
+    
+        <ion-slide>
+          <img src="assets/imgs/delivery_food.png" class="slide-image" />
+          <div class="slide-title" h="20%">
+              <ion-text> 
+                <span class="hypertext">
+                    Entrega Rápida
+                </span><br>
+                Entrega rápida de tus alimentos en donde sea que te encuentres,la casa, oficina, etc.
+              </ion-text>
+          </div>
+          <ion-row class="btn-row">
+            <ion-col><ion-button class="next-btn" expand="block" fill="solid" (click)="nextPage()">Continuar</ion-button></ion-col>
+          </ion-row>
+        </ion-slide>
+    
+        <ion-slide>
+          <img src="assets/imgs/live_tracking.png" class="slide-image" />
+          <div class="slide-title" h="20%">
+              <ion-text> 
+                <span class="hypertext">
+                    Rastreo En Tiempo Real
+                </span><br>
+                Rastrea tus pedidos por gas desde la comodidad de tu app VA!
+              </ion-text>
+          </div>
+          <ion-row class="btn-row">
+            <!-- <ion-col><ion-button class="skip-btn" fill="clear" (click)="startApp()">Skip</ion-button></ion-col> -->
+            <ion-col><ion-button class="next-btn" expand="block" fill="solid" (click)="nextPage()">Continuar</ion-button></ion-col>
+          </ion-row>
+        </ion-slide>
+    
+         
+      </ion-slides>
+</ion-content>
